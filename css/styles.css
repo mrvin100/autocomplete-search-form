@@ -1,0 +1,141 @@
+/* Custom css file made by JeanDoe */
+
+@charset 'utf-8';
+
+/* Import items */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* declaration of root variables */
+
+:root{
+    /* fonts */
+    --body-font: 'Poppins', Arial, sans-serif;
+
+    /* colors */
+    --white: #fff;
+    --black: #000;
+    --black-clr: #567;
+    --white-bg: #faf9f9;
+    --light-bg: #d1e1f1;
+    --light-clr: #888;
+}
+
+/* Initialisations of tags */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+}
+
+
+/* bases */
+
+html{
+    font-size: 90%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 0.938rem;
+    font-weight: normal;
+    background: var(--white-bg);
+    padding: 0.5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* resusables classes */
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* search section starts */
+
+.wrapper{
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    max-width: 40rem;
+    width: 100%;
+}
+
+.wrapper .search-input{
+    position: relative;
+}
+
+.wrapper .search-input input{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    border: 1px solid rgba(0, 0, 0, .3);
+    color: var(--black);
+    font-weight: 300;
+    width: 100%;
+}
+
+.wrapper .search-input .icon{
+    font-size: 1.6rem;
+    position: absolute;
+    top: .1rem;
+    right: .05rem;
+    cursor: pointer;
+    color: var(--black-clr);
+    background: var(--white);
+    height: 3rem;
+    width: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+
+.wrapper .search-input .autocom-box{
+    width: 100%;
+    display: block;
+    list-style-type: none;
+    font-weight: 300;
+    letter-spacing: .02rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.wrapper .search-input .autocom-box li{
+    cursor: pointer;
+    display: block;
+    margin: 0.1rem 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.wrapper .search-input .autocom-box li:first-of-type{
+    padding-top: 0.5rem;;
+}
+
+.wrapper .search-input .autocom-box li:last-of-type{
+    padding-bottom: .5rem;
+}
+
+.wrapper .search-input .autocom-box li:active{
+    color: var(--light-clr);
+}
+
+.wrapper .search-input .autocom-box li:hover{
+    color: var(--black-clr);
+}
+
+@media  (max-width: 900px) {
+
+}
